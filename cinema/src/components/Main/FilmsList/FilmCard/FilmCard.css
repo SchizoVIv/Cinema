@@ -1,0 +1,19 @@
+.card {
+    max-width: 350px;
+    width: 100%;
+    max-height: 123px;
+    background-color: var(--card-color, #2F3951);
+    display: flex;
+    align-items: center;
+}
+
+.card__image {
+    max-width: 117px;
+}
+
+.card__title {
+    margin: 40px 18px;
+    padding: 0;
+    font-size: 20px;
+    
+}

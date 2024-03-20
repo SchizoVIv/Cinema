@@ -9,9 +9,11 @@ export default function Header() {
                 <img 
                     className='header__logo' 
                     src={LOGO_IMG} 
-                    alt="Film!" 
+                    alt="Логотип фильм!" 
                 />
-                <button className='header__button-cart'></button>
+                <button className='header__button-cart'>
+                    <span className='visually-hidden'>Корзина покупок</span>
+                </button>
             </div>
         </header>
     )

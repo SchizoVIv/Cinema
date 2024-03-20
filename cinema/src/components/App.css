@@ -1,0 +1,25 @@
+.visually-hidden {
+    position: absolute; /* элемент вырывают из потока */
+    width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
+    height: 1px;
+    margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
+    padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
+    border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
+    clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
+    overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
+  } 
+
+  #root {
+    height: 100vh;
+    --main-color: #131824;
+    --card-color: #2F3951;
+    --first-button-color: #FFFFFF;
+    --second-button-color: #3F4B67;
+    --decor-color: #F0D288;
+    --font-darc-color: #2F3951;
+    --font-light-color: #FFFFFF;
+    --title-font-family: 'EBGaramond';
+    --main-font-family: 'YSText';
+    background-color: var(--main-color, #131824);
+    font-family: var(--main-font-family);
+}
