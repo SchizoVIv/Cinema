@@ -1,21 +1,23 @@
 @font-face {
-    src: local('EBGaramond'), local('EB Garamond'),
-        url('./EBGaramond-Regular.woff2') format('woff2'),
-        url('./EBGaramond-Regular.woff') format('woff'),
-        url('./EBGaramond-Regular.ttf') format('truetype'),
-        url('./EBGaramond-Regular.eot') format('eot'),; 
-	font-family: 'EBGaramond'; 
+    font-family: 'EBGaramond'; 
+    src: local('Garamond'), local('garamond'),
+        url('./garamond.woff2') format('woff2'),
+        url('./garamond.woff') format('woff'),
+        url('./garamond.ttf') format('truetype'),
+        url('./garamond.eot') format('eot'),; 
     font-weight: 400;
     font-style:  normal;
+    font-display: swap;
 }
 
 @font-face {
+    font-family: 'YSText'; 
     src: local('Yandex Sans'), local('YS Text'), local('YSText'), local('YandexSans'),
         url('./YandexSansDisplay-Regular.woff2') format('woff2'),
         url('./YandexSansDisplay-Regular.woff') format('woff'),
         url('./YandexSansDisplay-Regular.ttf') format('truetype'),
         url('./YandexSansDisplay-Regular.eot') format('eot'),; 
-	font-family: 'YSText'; 
     font-weight: 400;
     font-style:  normal;
+    font-display: swap;
 }
