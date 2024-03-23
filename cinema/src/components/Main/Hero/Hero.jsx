@@ -1,7 +1,7 @@
 import './Hero.css'
 
 export default function Hero(props) {
-    
+
     return(
         <section className='hero'>
             <div className='conteiner-main'>
@@ -16,7 +16,10 @@ export default function Hero(props) {
                 </table>
                 <h1 className='hero__title'>{props.activeCard.nameRU}</h1>
                 <p className='hero__text'>{props.activeCard.text}</p>
-                <button className='hero__button'>Купить биллет</button>
+                <button
+                    className='hero__button'
+                    onClick={props.handlePopupOpen}
+                >Купить биллет</button>
             </div>
         </section>
     )

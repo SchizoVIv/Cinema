@@ -7,7 +7,7 @@
     border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
     clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
     overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
-  } 
+  }
 
   #root {
     height: 100vh;
@@ -20,6 +20,8 @@
     --font-light-color: #FFFFFF;
     --title-font-family: 'EBGaramond';
     --main-font-family: 'YSText';
+    --max-width-popup: 1051px;
+
     background-color: var(--main-color, #131824);
     font-family: var(--main-font-family);
 }

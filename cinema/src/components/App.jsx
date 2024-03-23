@@ -2,15 +2,21 @@ import './App.css';
 import Header from './Header/Header'
 import Hero from './Main/Hero/Hero'
 import FilmsList from './Main/FilmsList/FilmsList'
-import { useState } from 'react';
+import Popup from './Main/Popup/Popup'
+import { useEffect, useState } from 'react';
 
 export default function App() {
-    const [activeCard, setActiveCard] = useState({nameRU: 'Стражи Гримуара', text:'Захватывающее фэнтезийное приключение режиссера Лайлы» рассказывает о группе героев, которые должны защитить древний магический том от попадания в руки тёмного колдуна. История об истинном значении дружбы, мужества и силы знаний.'})
-    
+    const [activeCard, setActiveCard] = useState({})
+
+    const [isClose, setClose] = useState(false)
 
     function chengeActiveCard(card) {
         setActiveCard(card)
         console.log(card)
+    }
+
+    function handlePopupOpen() {
+        setClose(true)
     }
 
     return(
@@ -19,9 +25,15 @@ export default function App() {
             <main>
                 <Hero
                     activeCard={activeCard}
+                    handlePopupOpen={handlePopupOpen}
                 />
                 <FilmsList
                     chengeActiveCard={chengeActiveCard}
+                />
+                <Popup
+                    isClose={isClose}
+                    setClose={setClose}
+                    activeCard={activeCard}
                 />
             </main>
         </>

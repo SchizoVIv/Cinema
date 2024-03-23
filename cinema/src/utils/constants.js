@@ -1,4 +1,25 @@
 import image1 from '../images/unsplash.jpg';
+
+export const timeList = [
+  {
+    date: '17 мая',
+    sessions: ['09:00', '12:40', '14:50', '16:40', '21:10']
+  },
+  {
+    date: '18 мая',
+    sessions: ['09:00', '12:40', '14:50', '16:40', '21:10']
+  },
+  {
+    date: '19 мая',
+    sessions: ['09:00', '12:40', '14:50', '16:40', '21:10']
+  }
+]
+
+export const placesList ={
+  column: 10,
+  row: 5
+}
+
 export const initialMovies = [
     {
       nameRU: 'Архитекторы общества',

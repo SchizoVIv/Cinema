@@ -4,6 +4,7 @@ export default function FilmCard(props) {
 
     const handleClick = () => {
         props.chengeActiveCard(props.film)
+        
     }
     return(
         <li className='card' onClick={handleClick}>
